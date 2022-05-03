@@ -1,0 +1,45 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+class Node{
+    public:
+    int data;
+    Node *next;
+};
+class Linkedlist {
+    private:
+    Node *first;
+    public:
+    Linkedlist(int A[],int n);
+    void display();
+};
+Linkedlist:: Linkedlist(int A[],int n){
+    Node *last , *t;
+    first=new Node;
+    first->data=A[0];
+    first->next=NULL;
+    last=first;
+    for(int i=1;i<n;i++){
+        t=new Node;
+        t->data=A[i];
+        t->next=NULL;
+        last->next=t;
+        last=t;
+    }
+    
+}
+void Linkedlist::display(){
+    Node *p=first;
+    while(p){
+        cout<<p->data<<" ";
+        p=p->next;
+    }
+}
+
+int main(){
+    int A[]={1,2,3,4,5};
+    Linkedlist l(A,5);
+    l.display();
+    
+    
+}
