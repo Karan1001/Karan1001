@@ -1,7 +1,7 @@
 -  I’m Karan
 - 👀 I love to do coding.
 - 🌱 I’m currently learning Data structure.
--  Started these days in learning Machine Learning.
+-  Started these days in learning ML.
 
 
 
